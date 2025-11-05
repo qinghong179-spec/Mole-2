@@ -36,11 +36,11 @@ class MoleViewModel : ViewModel() {
 
     private fun startCounting() {
         viewModelScope.launch {
-            // 🚨 關鍵：60 秒停止遊戲條件
-            while (stay < 60) { // 當 stay >= 60 時，迴圈和 moveMole() 將停止執行
+
+            while (stay < 60) {
                 delay(1000L)
                 stay++
-                moveMole() // 隨機移動地鼠
+                moveMole()
             }
         }
     }
