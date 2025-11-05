@@ -13,7 +13,6 @@ import kotlin.random.Random
 
 class MoleViewModel : ViewModel() {
 
-    // --- 遊戲狀態 ---
     var counter by mutableLongStateOf(0)
         private set
 
